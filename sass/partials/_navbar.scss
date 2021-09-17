@@ -1,0 +1,21 @@
+nav > .container-fluid {
+  max-width: 90%;
+}
+
+nav > .container-fluid > .navbar-brand {
+  color: $primary-color;
+  font-family: $font-heading;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.collapse > form > .form-control {
+  border-radius: 4px 0px 0px 4px;
+  border: none;
+}
+
+.collapse > form > .btn {
+  background-color: $primary-color;
+  color: $text-primary;
+  border-radius: 0px 4px 4px 0px;
+}

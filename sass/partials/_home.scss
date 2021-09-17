@@ -1,0 +1,60 @@
+.carousel {
+  margin-bottom: 42px;
+}
+
+.carousel > .carousel-indicators > button {
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.carousel > .carousel-indicators > .active {
+  background-color: $primary-color;
+}
+
+.text-field {
+  max-width: 90%;
+  margin: 0px auto 77px auto;
+}
+
+.text-field > h1 {
+  margin-bottom: 13px;
+}
+
+.tab-container {
+  max-width: 90%;
+  margin: 0px auto;
+}
+
+.tab-container > ul {
+  border: none;
+}
+
+.tab-container > ul > li > button {
+  border-top-left-radius: 80%;
+  border-top-right-radius: 80%;
+  border: none;
+  color: $primary-color;
+  padding: 10px 40px;
+}
+
+.tab-container > .active {
+  background-color: $background-color;
+  border: none;
+}
+
+.tab-content {
+  background-color: $background-color;
+}
+
+.tab-pane > img {
+  width: 238px;
+  height: 149px;
+  margin: 40px;
+}
+
+.tab-pane > .tab-text-field {
+  margin: 40px;
+}

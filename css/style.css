@@ -1,3 +1,116 @@
+html,
+body {
+  height: 100%;
+}
+
+html > body {
+  background: #e5e5e5;
+  background: radial-gradient(circle, #e5e5e5 0%, white 100%);
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: 50px;
+}
+
+footer,
+.push {
+  height: 50px;
+}
+
+h1, .h1 {
+  color: #e92569;
+  font-family: "Playfair Display", serif;
+}
+
+nav > .container-fluid, nav > .container-sm, nav > .container-md, nav > .container-lg, nav > .container-xl, nav > .container-xxl {
+  max-width: 90%;
+}
+
+nav > .container-fluid > .navbar-brand, nav > .container-sm > .navbar-brand, nav > .container-md > .navbar-brand, nav > .container-lg > .navbar-brand, nav > .container-xl > .navbar-brand, nav > .container-xxl > .navbar-brand {
+  color: #e92569;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.collapse > form > .form-control {
+  border-radius: 4px 0px 0px 4px;
+  border: none;
+}
+
+.collapse > form > .btn {
+  background-color: #e92569;
+  color: white;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.carousel {
+  margin-bottom: 42px;
+}
+
+.carousel > .carousel-indicators > button {
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.carousel > .carousel-indicators > .active {
+  background-color: #e92569;
+}
+
+.text-field {
+  max-width: 90%;
+  margin: 0px auto 77px auto;
+}
+
+.text-field > h1, .text-field > .h1 {
+  margin-bottom: 13px;
+}
+
+.tab-container {
+  max-width: 90%;
+  margin: 0px auto;
+}
+
+.tab-container > ul {
+  border: none;
+}
+
+.tab-container > ul > li > button {
+  border-top-left-radius: 80%;
+  border-top-right-radius: 80%;
+  border: none;
+  color: #e92569;
+  padding: 10px 40px;
+}
+
+.tab-container > .active {
+  background-color: white;
+  border: none;
+}
+
+.tab-content {
+  background-color: white;
+}
+
+.tab-pane > img {
+  width: 238px;
+  height: 149px;
+  margin: 40px;
+}
+
+.tab-pane > .tab-text-field {
+  margin: 40px;
+}
+
+footer {
+  max-width: 90%;
+  margin: 0px auto;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

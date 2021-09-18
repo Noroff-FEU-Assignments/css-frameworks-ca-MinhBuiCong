@@ -1,0 +1,48 @@
+.accordion {
+  max-width: 90%;
+  margin: 0px auto;
+  box-shadow: 2px 2px 2px rgba(65, 65, 65, 0.089);
+
+  .accordion-item {
+    border: none;
+    background: rgb(229, 229, 229);
+    background: radial-gradient(
+      circle,
+      rgba(229, 229, 229, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+  .accordion-item > .show {
+    border-top: 2px solid $primary-color;
+  }
+}
+
+.accordion > .accordion-item > h2 {
+  button {
+    background-color: $background-color;
+    color: $primary-color;
+    border-top: 2px solid rgba(128, 128, 128, 0.158);
+  }
+  .accordion-button::after {
+    background-image: none;
+  }
+}
+
+.accordion > .accordion-item > .show > .accordion-body {
+  p {
+    margin-bottom: 20px;
+    font-family: $font-text;
+    color: $text-secondary;
+    font-size: $text-small;
+  }
+  img {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .accordion-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}

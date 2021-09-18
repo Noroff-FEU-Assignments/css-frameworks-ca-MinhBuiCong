@@ -1,0 +1,53 @@
+.tab-container {
+  max-width: 90%;
+  margin: 0px auto;
+
+  ul {
+    border: none;
+  }
+}
+
+.tab-container > ul > li {
+  button {
+    border-top-left-radius: 80%;
+    border-top-right-radius: 80%;
+    border: none;
+    color: $primary-color;
+    padding: 10px 40px;
+  }
+
+  .active {
+    background-color: $background-color;
+    border: none;
+  }
+}
+
+.tab-content {
+  background-color: $background-color;
+  padding: 40px 0px;
+  margin-top: -1px;
+}
+
+.tab-container > .tab-content > .active {
+  display: flex;
+}
+
+.tab-pane {
+  .image-container {
+    margin: 0px 40px 40px 40px;
+    width: fit-content;
+  }
+
+  .image-container > img {
+    width: 238px;
+    height: 149px;
+  }
+
+  .tab-text-field {
+    margin: 0px 40px 40px 40px;
+    width: fit-content;
+    color: $text-secondary;
+    font-size: $text-small;
+    font-family: $font-text;
+  }
+}

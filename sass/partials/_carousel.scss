@@ -1,0 +1,43 @@
+.carousel {
+  margin-bottom: 42px;
+
+  .carousel-indicators > button {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+
+  .carousel-indicators > .active {
+    background-color: $primary-color;
+  }
+}
+
+.text-field {
+  max-width: 90%;
+  margin: 0px auto 77px auto;
+
+  h1 {
+    margin-bottom: 13px;
+    font-family: $font-heading;
+    font-size: 34px;
+  }
+
+  p {
+    font-family: $font-text;
+    font-size: 16px;
+    color: $text-secondary;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .carousel {
+    height: 287px;
+
+    .carousel-inner > .carousel-item > img {
+      height: 287px;
+      object-fit: cover;
+    }
+  }
+}

@@ -23,6 +23,19 @@
   margin-bottom: 13px;
 }
 
+.accordion {
+  max-width: 90%;
+  margin: 0px auto;
+}
+
+.accordion > .accordion-item > .accordion-button {
+  color: red;
+}
+
+.accordion > .accordion-item > .accordion-button {
+  background-color: $background-color;
+}
+
 .tab-container {
   max-width: 90%;
   margin: 0px auto;
@@ -40,21 +53,31 @@
   padding: 10px 40px;
 }
 
-.tab-container > .active {
+.tab-container > ul > li > .active {
   background-color: $background-color;
   border: none;
 }
 
 .tab-content {
   background-color: $background-color;
+  padding: 40px 0px;
 }
 
-.tab-pane > img {
+.tab-container > .tab-content > .active {
+  display: flex;
+}
+
+.tab-pane > .image-container {
+  margin: 0px 40px 40px 40px;
+  width: fit-content;
+}
+
+.tab-pane > .image-container > img {
   width: 238px;
   height: 149px;
-  margin: 40px;
 }
 
 .tab-pane > .tab-text-field {
-  margin: 40px;
+  margin: 0px 40px 40px 40px;
+  width: fit-content;
 }

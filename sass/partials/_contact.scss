@@ -1,0 +1,88 @@
+.contact-container {
+  margin-top: 40px;
+}
+
+.contact-container > h1 {
+  max-width: 90%;
+  margin: 0px auto 30px auto;
+  font-family: $font-heading;
+}
+
+.contact-container > .container-fluid {
+  padding: 0px;
+  width: 100%;
+}
+
+.contact-container > .container-fluid > form {
+  background-color: $light;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.205);
+  margin-right: 70px;
+  padding: 30px;
+  width: 555px;
+}
+
+.contact-container > .container-fluid > form > .col-12 {
+  margin-bottom: 10px;
+
+  .input-group > .input-group-text {
+    border: none;
+    color: $text-primary;
+    background-color: #c7c7c7;
+    font-family: $font-text;
+  }
+
+  .input-group > .form-control {
+    border: none;
+    height: 56px;
+  }
+}
+
+.contact-container > .container-fluid > form > .col-12 > .form-label {
+  font-size: 20px;
+  color: $text-secondary;
+  font-family: $font-text;
+}
+
+.contact-container > .container-fluid > form > .col-12 > .form-control {
+  border: none;
+  height: 56px;
+}
+.contact-container > .container-fluid > form > .col-12 > .message-control {
+  border: none;
+  height: 224px;
+}
+
+.contact-container > .container-fluid > form > .col-12 > .form-check {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+  .form-check-input {
+    height: 33px;
+    width: 33px;
+    border: none;
+    margin-right: 13px;
+  }
+
+  .form-check-input:checked {
+    background-color: $primary-color;
+  }
+
+  .form-check-input:checked[type="checkbox"] {
+    background-image: none;
+  }
+  .form-check-label {
+    font-family: $font-text;
+    color: $text-secondary;
+    font-size: 15px;
+  }
+}
+
+.contact-container > .container-fluid > form > .col-12 > .btn {
+  margin-top: 10px;
+  width: 100%;
+  background-color: $text-secondary;
+  border: none;
+  font-size: 22px;
+  height: 58px;
+}

@@ -2,3 +2,27 @@ footer {
   max-width: 90%;
   margin: 0px auto;
 }
+
+.mobile-footer > .footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.mobile-footer > .footer-logo > svg {
+  height: 30px;
+  width: auto;
+}
+
+.mobile-footer > .footer-text {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.mobile-footer > .footer-text > p {
+  font-family: $font-text;
+  color: $text-secondary;
+}

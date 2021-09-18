@@ -143,14 +143,18 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
   background: radial-gradient(circle, #e5e5e5 0%, white 100%);
 }
 
-.accordion > .accordion-item > h2, .accordion > .accordion-item > .h2 {
-  border-bottom: 1px solid rgba(128, 128, 128, 0.158);
-  z-index: -1;
+.accordion .accordion-item > .show {
+  border-top: 2px solid #e92569;
 }
 
-.accordion > .accordion-item > .show > .accordion-body {
-  border-top: 2px solid #e92569;
-  z-index: 1;
+.accordion > .accordion-item > h2 button, .accordion > .accordion-item > .h2 button {
+  background-color: #fff;
+  color: #e92569;
+  border-top: 2px solid rgba(128, 128, 128, 0.158);
+}
+
+.accordion > .accordion-item > h2 .accordion-button::after, .accordion > .accordion-item > .h2 .accordion-button::after {
+  background-image: none;
 }
 
 .accordion > .accordion-item > .show > .accordion-body p {
@@ -228,6 +232,9 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  color: #767676;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
 }
 
 @media screen and (max-width: 770px) {

@@ -45,22 +45,28 @@
       rgba(255, 255, 255, 1) 100%
     );
   }
+  .accordion-item > .show {
+    border-top: 2px solid $primary-color;
+  }
 }
 
 .accordion > .accordion-item > h2 {
-  border-bottom: 1px solid rgba(128, 128, 128, 0.158);
-  z-index: -1;
+  button {
+    background-color: $background-color;
+    color: $primary-color;
+    border-top: 2px solid rgba(128, 128, 128, 0.158);
+  }
+  .accordion-button::after {
+    background-image: none;
+  }
 }
 
 .accordion > .accordion-item > .show > .accordion-body {
-  border-top: 2px solid $primary-color;
-  z-index: 1;
-
   p {
     margin-bottom: 20px;
     font-family: $font-text;
     color: $text-secondary;
-    font-size: 16px;
+    font-size: $text-small;
   }
   img {
     max-width: 100%;
@@ -121,6 +127,9 @@
   .tab-text-field {
     margin: 0px 40px 40px 40px;
     width: fit-content;
+    color: $text-secondary;
+    font-size: $text-small;
+    font-family: $font-text;
   }
 }
 

@@ -10,7 +10,7 @@
 
 .contact-container > .container-fluid {
   padding: 0px;
-  width: 100%;
+  max-width: 90%;
 }
 
 .contact-container > .container-fluid > form {
@@ -85,4 +85,49 @@
   border: none;
   font-size: 22px;
   height: 58px;
+}
+
+.contact-container > .container-fluid > .additional-info-container {
+  padding-top: 20px;
+
+  .col-12 {
+    margin-bottom: 30px;
+  }
+
+  .col-12 > svg {
+    margin-right: 30px;
+  }
+
+  .col-12 > p {
+    font-size: 16px;
+    font-family: $font-text;
+    color: $text-secondary;
+  }
+
+  .col-12 > .text-info > p {
+    font-size: 16px;
+    font-family: $font-text;
+    color: $text-secondary;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    white-space: nowrap;
+  }
+}
+
+.contact-container > .container-fluid > .d-md-none {
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 770px) {
+  .contact-container > .container-fluid {
+    flex-direction: column-reverse;
+    max-width: 100%;
+  }
+  .contact-container > .container-fluid > form {
+    width: 100%;
+  }
+  .contact-container > .container-fluid > .additional-info-container {
+    margin-left: 30px;
+  }
 }

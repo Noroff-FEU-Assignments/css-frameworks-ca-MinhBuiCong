@@ -308,7 +308,7 @@ nav > .container-fluid > .navbar-brand, nav > .container-sm > .navbar-brand, nav
 
 .contact-container > .container-fluid, .contact-container > .container-sm, .contact-container > .container-md, .contact-container > .container-lg, .contact-container > .container-xl, .contact-container > .container-xxl {
   padding: 0px;
-  width: 100%;
+  max-width: 90%;
 }
 
 .contact-container > .container-fluid > form, .contact-container > .container-sm > form, .contact-container > .container-md > form, .contact-container > .container-lg > form, .contact-container > .container-xl > form, .contact-container > .container-xxl > form {
@@ -390,6 +390,54 @@ nav > .container-fluid > .navbar-brand, nav > .container-sm > .navbar-brand, nav
   border: none;
   font-size: 22px;
   height: 58px;
+}
+
+.contact-container > .container-fluid > .additional-info-container, .contact-container > .container-sm > .additional-info-container, .contact-container > .container-md > .additional-info-container, .contact-container > .container-lg > .additional-info-container, .contact-container > .container-xl > .additional-info-container, .contact-container > .container-xxl > .additional-info-container {
+  padding-top: 20px;
+}
+
+.contact-container > .container-fluid > .additional-info-container .col-12, .contact-container > .container-sm > .additional-info-container .col-12, .contact-container > .container-md > .additional-info-container .col-12, .contact-container > .container-lg > .additional-info-container .col-12, .contact-container > .container-xl > .additional-info-container .col-12, .contact-container > .container-xxl > .additional-info-container .col-12 {
+  margin-bottom: 30px;
+}
+
+.contact-container > .container-fluid > .additional-info-container .col-12 > svg, .contact-container > .container-sm > .additional-info-container .col-12 > svg, .contact-container > .container-md > .additional-info-container .col-12 > svg, .contact-container > .container-lg > .additional-info-container .col-12 > svg, .contact-container > .container-xl > .additional-info-container .col-12 > svg, .contact-container > .container-xxl > .additional-info-container .col-12 > svg {
+  margin-right: 30px;
+}
+
+.contact-container > .container-fluid > .additional-info-container .col-12 > p, .contact-container > .container-sm > .additional-info-container .col-12 > p, .contact-container > .container-md > .additional-info-container .col-12 > p, .contact-container > .container-lg > .additional-info-container .col-12 > p, .contact-container > .container-xl > .additional-info-container .col-12 > p, .contact-container > .container-xxl > .additional-info-container .col-12 > p {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: #767676;
+}
+
+.contact-container > .container-fluid > .additional-info-container .col-12 > .text-info > p, .contact-container > .container-sm > .additional-info-container .col-12 > .text-info > p, .contact-container > .container-md > .additional-info-container .col-12 > .text-info > p, .contact-container > .container-lg > .additional-info-container .col-12 > .text-info > p, .contact-container > .container-xl > .additional-info-container .col-12 > .text-info > p, .contact-container > .container-xxl > .additional-info-container .col-12 > .text-info > p {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  color: #767676;
+  margin-left: 10px;
+  margin-bottom: 3px;
+  white-space: nowrap;
+}
+
+.contact-container > .container-fluid > .d-md-none, .contact-container > .container-sm > .d-md-none, .contact-container > .container-md > .d-md-none, .contact-container > .container-lg > .d-md-none, .contact-container > .container-xl > .d-md-none, .contact-container > .container-xxl > .d-md-none {
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 770px) {
+  .contact-container > .container-fluid, .contact-container > .container-sm, .contact-container > .container-md, .contact-container > .container-lg, .contact-container > .container-xl, .contact-container > .container-xxl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    max-width: 100%;
+  }
+  .contact-container > .container-fluid > form, .contact-container > .container-sm > form, .contact-container > .container-md > form, .contact-container > .container-lg > form, .contact-container > .container-xl > form, .contact-container > .container-xxl > form {
+    width: 100%;
+  }
+  .contact-container > .container-fluid > .additional-info-container, .contact-container > .container-sm > .additional-info-container, .contact-container > .container-md > .additional-info-container, .contact-container > .container-lg > .additional-info-container, .contact-container > .container-xl > .additional-info-container, .contact-container > .container-xxl > .additional-info-container {
+    margin-left: 30px;
+  }
 }
 
 footer {

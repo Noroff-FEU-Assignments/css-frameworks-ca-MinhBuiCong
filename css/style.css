@@ -127,12 +127,13 @@ nav > .container-fluid > .navbar-brand, nav > .container-sm > .navbar-brand, nav
 }
 
 .accordion > .accordion-item > h2, .accordion > .accordion-item > .h2 {
-  border-bottom: 1px solid #e92569;
-  background-color: white;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.158);
+  z-index: -1;
 }
 
-.accordion > .accordion-item > .accordion-button {
-  border: none;
+.accordion > .accordion-item > .show > .accordion-body {
+  border-top: 2px solid #e92569;
+  z-index: 1;
 }
 
 .accordion > .accordion-item > .show > .accordion-body p {

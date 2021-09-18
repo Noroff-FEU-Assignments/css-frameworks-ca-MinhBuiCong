@@ -39,14 +39,14 @@
 }
 
 .accordion > .accordion-item > h2 {
-  border-bottom: 1px solid $primary-color;
-  background-color: white;
-}
-.accordion > .accordion-item > .accordion-button {
-  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.158);
+  z-index: -1;
 }
 
 .accordion > .accordion-item > .show > .accordion-body {
+  border-top: 2px solid $primary-color;
+  z-index: 1;
+
   p {
     margin-bottom: 20px;
     font-family: $font-text;

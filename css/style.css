@@ -111,13 +111,23 @@ nav > .container-fluid > .navbar-brand, nav > .container-sm > .navbar-brand, nav
   margin: 0px auto 77px auto;
 }
 
-.text-field > h1, .text-field > .h1 {
+.text-field h1, .text-field .h1 {
   margin-bottom: 13px;
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+}
+
+.text-field p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #767676;
 }
 
 .accordion {
   max-width: 90%;
   margin: 0px auto;
+  -webkit-box-shadow: 2px 2px 2px rgba(65, 65, 65, 0.089);
+          box-shadow: 2px 2px 2px rgba(65, 65, 65, 0.089);
 }
 
 .accordion .accordion-item {

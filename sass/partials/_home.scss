@@ -17,15 +17,24 @@
 .text-field {
   max-width: 90%;
   margin: 0px auto 77px auto;
-}
 
-.text-field > h1 {
-  margin-bottom: 13px;
+  h1 {
+    margin-bottom: 13px;
+    font-family: $font-heading;
+    font-size: 34px;
+  }
+
+  p {
+    font-family: $font-text;
+    font-size: 16px;
+    color: $text-secondary;
+  }
 }
 
 .accordion {
   max-width: 90%;
   margin: 0px auto;
+  box-shadow: 2px 2px 2px rgba(65, 65, 65, 0.089);
 
   .accordion-item {
     border: none;

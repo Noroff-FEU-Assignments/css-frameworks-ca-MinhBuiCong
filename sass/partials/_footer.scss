@@ -1,17 +1,29 @@
 footer {
   background-color: $background-color;
-  padding: 10px 80px;
+  padding: 0px 80px;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+
+    p {
+      font-family: $font-text;
+      color: $text-secondary;
+      font-size: $text-small;
+    }
+  }
 }
 
 .mobile-footer {
   height: fit-content;
+  padding-top: 50px;
 }
 
 .mobile-footer > .footer-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
   margin-bottom: 40px;
 
   svg {

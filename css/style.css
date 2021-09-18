@@ -496,13 +496,30 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
 
 footer {
   background-color: #fff;
-  padding: 10px 80px;
+  padding: 0px 80px;
+}
+
+footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+}
+
+footer .footer-content p {
+  font-family: "Lato", sans-serif;
+  color: #767676;
+  font-size: 16px;
 }
 
 .mobile-footer {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  padding-top: 50px;
 }
 
 .mobile-footer > .footer-logo {
@@ -515,7 +532,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 50px;
   margin-bottom: 40px;
 }
 

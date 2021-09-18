@@ -26,14 +26,43 @@
 .accordion {
   max-width: 90%;
   margin: 0px auto;
+
+  .accordion-item {
+    border: none;
+    background: rgb(229, 229, 229);
+    background: radial-gradient(
+      circle,
+      rgba(229, 229, 229, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
 }
 
+.accordion > .accordion-item > h2 {
+  border-bottom: 1px solid $primary-color;
+  background-color: white;
+}
 .accordion > .accordion-item > .accordion-button {
-  color: red;
+  border: none;
 }
 
-.accordion > .accordion-item > .accordion-button {
-  background-color: $background-color;
+.accordion > .accordion-item > .show > .accordion-body {
+  p {
+    margin-bottom: 20px;
+    font-family: $font-text;
+    color: $text-secondary;
+    font-size: 16px;
+  }
+  img {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .accordion-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
 }
 
 .tab-container {
@@ -80,4 +109,14 @@
 .tab-pane > .tab-text-field {
   margin: 0px 40px 40px 40px;
   width: fit-content;
+}
+
+@media screen and (max-width: 770px) {
+  .carousel {
+    height: 287px;
+  }
+  .carousel > .carousel-inner > .carousel-item > img {
+    height: 287px;
+    object-fit: cover;
+  }
 }

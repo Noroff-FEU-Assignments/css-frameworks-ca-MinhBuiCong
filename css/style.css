@@ -120,12 +120,44 @@ nav > .container-fluid > .navbar-brand, nav > .container-sm > .navbar-brand, nav
   margin: 0px auto;
 }
 
-.accordion > .accordion-item > .accordion-button {
-  color: red;
+.accordion .accordion-item {
+  border: none;
+  background: #e5e5e5;
+  background: radial-gradient(circle, #e5e5e5 0%, white 100%);
+}
+
+.accordion > .accordion-item > h2, .accordion > .accordion-item > .h2 {
+  border-bottom: 1px solid #e92569;
+  background-color: white;
 }
 
 .accordion > .accordion-item > .accordion-button {
-  background-color: white;
+  border: none;
+}
+
+.accordion > .accordion-item > .show > .accordion-body p {
+  margin-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  color: #767676;
+  font-size: 16px;
+}
+
+.accordion > .accordion-item > .show > .accordion-body img {
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.accordion > .accordion-item > .show > .accordion-body .accordion-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
 }
 
 .tab-container {
@@ -178,6 +210,17 @@ nav > .container-fluid > .navbar-brand, nav > .container-sm > .navbar-brand, nav
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+@media screen and (max-width: 770px) {
+  .carousel {
+    height: 287px;
+  }
+  .carousel > .carousel-inner > .carousel-item > img {
+    height: 287px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .news-content {

@@ -1,46 +1,49 @@
 .news-content {
   margin-top: 40px;
-}
-.news-content > h1 {
-  max-width: 90%;
-  margin: 0 auto 40px auto;
-  font-family: $font-heading;
-  color: $primary-color;
+
+  h1 {
+    max-width: 90%;
+    margin: 0 auto 40px auto;
+    font-family: $font-heading;
+    color: $primary-color;
+  }
+
+  nav {
+    max-width: 90%;
+    margin: 0px auto 40px auto;
+  }
 }
 
-.news-content > nav {
-  max-width: 90%;
-  margin: 0px auto 40px auto;
-}
+.news-content > nav > ul {
+  .page-item > .page-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.news-content > nav > ul > .page-item > .page-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .active > .page-link {
+    width: 53px;
+    height: 48px;
+    border: 1px solid $primary-color;
+    background-color: $primary-color;
+  }
 
-.news-content > nav > ul > .active > .page-link {
-  width: 53px;
-  height: 48px;
-  border: 1px solid $primary-color;
-  background-color: $primary-color;
-}
-
-.news-content > nav > ul > .page-item > a {
-  width: 53px;
-  height: 48px;
-  border: 1px solid $primary-color;
-  color: $primary-color;
+  .page-item > a {
+    width: 53px;
+    height: 48px;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+  }
 }
 
 .container-fluid {
   max-width: 90%;
   margin: 0 auto;
-}
 
-.container-fluid > .row {
-  display: flex;
-  justify-content: space-between;
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .container-fluid > .row > .card {
@@ -48,54 +51,48 @@
   height: 394px;
   margin-bottom: 40px;
   width: 13rem;
+
+  .card-img-top {
+    object-fit: cover;
+    height: 190px;
+  }
 }
 
-.container-fluid > .row > .card > .card-img-top {
-  object-fit: cover;
-  height: 190px;
-}
+.container-fluid > .row > .card > .card-body {
+  .card-title {
+    font-size: 20px;
+    font-family: $font-text;
+  }
 
-.container-fluid > .row > .card > .card-body > .card-title {
-  font-size: 20px;
-  font-family: $font-text;
-}
+  .card-text {
+    color: $text-secondary;
+    font-size: 18px;
+    font-family: $font-text;
+  }
 
-.container-fluid > .row > .card > .card-body > .card-text {
-  color: $text-secondary;
-  font-size: 18px;
-  font-family: $font-text;
+  .card-link {
+    display: flex;
+  }
 }
 
 .container-fluid > .row > .card > .card-body > .card-link {
-  display: flex;
-}
+  .btn-primary {
+    background-color: $primary-color;
+    width: 80%;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    padding-left: 50px;
+  }
 
-.container-fluid > .row > .card > .card-body > .card-link > .btn-primary {
-  background-color: $primary-color;
-  width: 80%;
-  border: none;
-  border-radius: 5px 0px 0px 5px;
-  padding-left: 50px;
-}
-
-.container-fluid > .row > .card > .card-body > .card-link > .btn-secondary {
-  width: 20%;
-  border: none;
-  background-color: $text-secondary;
-  border-radius: 0px 5px 5px 0px;
+  .btn-secondary {
+    width: 20%;
+    border: none;
+    background-color: $text-secondary;
+    border-radius: 0px 5px 5px 0px;
+  }
 }
 
 @media screen and (max-width: 580px) {
-  .news-content > h1 {
-    max-width: 80%;
-  }
-
-  .news-content > nav {
-    max-width: 80%;
-  }
-  .container-fluid {
-    max-width: 80%;
-  }
   .container-fluid > .row > .card {
     width: 100%;
   }

@@ -238,19 +238,19 @@ nav > .container-fluid > .navbar-brand, nav > .container-sm > .navbar-brand, nav
   margin-top: 40px;
 }
 
-.news-content > h1, .news-content > .h1 {
+.news-content h1, .news-content .h1 {
   max-width: 90%;
   margin: 0 auto 40px auto;
   font-family: "Playfair Display", serif;
   color: #e92569;
 }
 
-.news-content > nav {
+.news-content nav {
   max-width: 90%;
   margin: 0px auto 40px auto;
 }
 
-.news-content > nav > ul > .page-item > .page-link {
+.news-content > nav > ul .page-item > .page-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,14 +262,14 @@ nav > .container-fluid > .navbar-brand, nav > .container-sm > .navbar-brand, nav
           align-items: center;
 }
 
-.news-content > nav > ul > .active > .page-link {
+.news-content > nav > ul .active > .page-link {
   width: 53px;
   height: 48px;
   border: 1px solid #e92569;
   background-color: #e92569;
 }
 
-.news-content > nav > ul > .page-item > a {
+.news-content > nav > ul .page-item > a {
   width: 53px;
   height: 48px;
   border: 1px solid #e92569;
@@ -281,7 +281,7 @@ nav > .container-fluid > .navbar-brand, nav > .container-sm > .navbar-brand, nav
   margin: 0 auto;
 }
 
-.container-fluid > .row, .container-sm > .row, .container-md > .row, .container-lg > .row, .container-xl > .row, .container-xxl > .row {
+.container-fluid .row, .container-sm .row, .container-md .row, .container-lg .row, .container-xl .row, .container-xxl .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,30 +297,30 @@ nav > .container-fluid > .navbar-brand, nav > .container-sm > .navbar-brand, nav
   width: 13rem;
 }
 
-.container-fluid > .row > .card > .card-img-top, .container-sm > .row > .card > .card-img-top, .container-md > .row > .card > .card-img-top, .container-lg > .row > .card > .card-img-top, .container-xl > .row > .card > .card-img-top, .container-xxl > .row > .card > .card-img-top {
+.container-fluid > .row > .card .card-img-top, .container-sm > .row > .card .card-img-top, .container-md > .row > .card .card-img-top, .container-lg > .row > .card .card-img-top, .container-xl > .row > .card .card-img-top, .container-xxl > .row > .card .card-img-top {
   -o-object-fit: cover;
      object-fit: cover;
   height: 190px;
 }
 
-.container-fluid > .row > .card > .card-body > .card-title, .container-sm > .row > .card > .card-body > .card-title, .container-md > .row > .card > .card-body > .card-title, .container-lg > .row > .card > .card-body > .card-title, .container-xl > .row > .card > .card-body > .card-title, .container-xxl > .row > .card > .card-body > .card-title {
+.container-fluid > .row > .card > .card-body .card-title, .container-sm > .row > .card > .card-body .card-title, .container-md > .row > .card > .card-body .card-title, .container-lg > .row > .card > .card-body .card-title, .container-xl > .row > .card > .card-body .card-title, .container-xxl > .row > .card > .card-body .card-title {
   font-size: 20px;
   font-family: "Lato", sans-serif;
 }
 
-.container-fluid > .row > .card > .card-body > .card-text, .container-sm > .row > .card > .card-body > .card-text, .container-md > .row > .card > .card-body > .card-text, .container-lg > .row > .card > .card-body > .card-text, .container-xl > .row > .card > .card-body > .card-text, .container-xxl > .row > .card > .card-body > .card-text {
+.container-fluid > .row > .card > .card-body .card-text, .container-sm > .row > .card > .card-body .card-text, .container-md > .row > .card > .card-body .card-text, .container-lg > .row > .card > .card-body .card-text, .container-xl > .row > .card > .card-body .card-text, .container-xxl > .row > .card > .card-body .card-text {
   color: #767676;
   font-size: 18px;
   font-family: "Lato", sans-serif;
 }
 
-.container-fluid > .row > .card > .card-body > .card-link, .container-sm > .row > .card > .card-body > .card-link, .container-md > .row > .card > .card-body > .card-link, .container-lg > .row > .card > .card-body > .card-link, .container-xl > .row > .card > .card-body > .card-link, .container-xxl > .row > .card > .card-body > .card-link {
+.container-fluid > .row > .card > .card-body .card-link, .container-sm > .row > .card > .card-body .card-link, .container-md > .row > .card > .card-body .card-link, .container-lg > .row > .card > .card-body .card-link, .container-xl > .row > .card > .card-body .card-link, .container-xxl > .row > .card > .card-body .card-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.container-fluid > .row > .card > .card-body > .card-link > .btn-primary, .container-sm > .row > .card > .card-body > .card-link > .btn-primary, .container-md > .row > .card > .card-body > .card-link > .btn-primary, .container-lg > .row > .card > .card-body > .card-link > .btn-primary, .container-xl > .row > .card > .card-body > .card-link > .btn-primary, .container-xxl > .row > .card > .card-body > .card-link > .btn-primary {
+.container-fluid > .row > .card > .card-body > .card-link .btn-primary, .container-sm > .row > .card > .card-body > .card-link .btn-primary, .container-md > .row > .card > .card-body > .card-link .btn-primary, .container-lg > .row > .card > .card-body > .card-link .btn-primary, .container-xl > .row > .card > .card-body > .card-link .btn-primary, .container-xxl > .row > .card > .card-body > .card-link .btn-primary {
   background-color: #e92569;
   width: 80%;
   border: none;
@@ -328,7 +328,7 @@ nav > .container-fluid > .navbar-brand, nav > .container-sm > .navbar-brand, nav
   padding-left: 50px;
 }
 
-.container-fluid > .row > .card > .card-body > .card-link > .btn-secondary, .container-sm > .row > .card > .card-body > .card-link > .btn-secondary, .container-md > .row > .card > .card-body > .card-link > .btn-secondary, .container-lg > .row > .card > .card-body > .card-link > .btn-secondary, .container-xl > .row > .card > .card-body > .card-link > .btn-secondary, .container-xxl > .row > .card > .card-body > .card-link > .btn-secondary {
+.container-fluid > .row > .card > .card-body > .card-link .btn-secondary, .container-sm > .row > .card > .card-body > .card-link .btn-secondary, .container-md > .row > .card > .card-body > .card-link .btn-secondary, .container-lg > .row > .card > .card-body > .card-link .btn-secondary, .container-xl > .row > .card > .card-body > .card-link .btn-secondary, .container-xxl > .row > .card > .card-body > .card-link .btn-secondary {
   width: 20%;
   border: none;
   background-color: #767676;
@@ -336,15 +336,6 @@ nav > .container-fluid > .navbar-brand, nav > .container-sm > .navbar-brand, nav
 }
 
 @media screen and (max-width: 580px) {
-  .news-content > h1, .news-content > .h1 {
-    max-width: 80%;
-  }
-  .news-content > nav {
-    max-width: 80%;
-  }
-  .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 80%;
-  }
   .container-fluid > .row > .card, .container-sm > .row > .card, .container-md > .row > .card, .container-lg > .row > .card, .container-xl > .row > .card, .container-xxl > .row > .card {
     width: 100%;
   }

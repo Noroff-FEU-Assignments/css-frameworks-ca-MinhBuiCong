@@ -69,17 +69,18 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
 .navbar-collapse > ul li > .nav-link {
   font-size: 16px;
   font-family: "Lato", sans-serif;
+  padding: 2px 10px;
 }
 
 .collapse > form > .form-control {
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 5px 0px 0px 5px;
   border: none;
 }
 
 .collapse > form > .btn {
   background-color: #e92569;
   color: #fff;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0px 5px 5px 0px;
 }
 
 @media screen and (max-width: 991px) {
@@ -158,12 +159,15 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
   height: 394px;
   margin-bottom: 40px;
   width: 16rem;
+  border-radius: 10px;
 }
 
 .container-fluid > .row > .card .card-img-top, .container-sm > .row > .card .card-img-top, .container-md > .row > .card .card-img-top, .container-lg > .row > .card .card-img-top, .container-xl > .row > .card .card-img-top, .container-xxl > .row > .card .card-img-top {
   -o-object-fit: cover;
      object-fit: cover;
   height: 190px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .container-fluid > .row > .card > .card-body .card-title, .container-sm > .row > .card > .card-body .card-title, .container-md > .row > .card > .card-body .card-title, .container-lg > .row > .card > .card-body .card-title, .container-xl > .row > .card > .card-body .card-title, .container-xxl > .row > .card > .card-body .card-title {
@@ -443,8 +447,8 @@ footer .footer-content p {
 }
 
 .tab-container > ul > li button {
-  border-top-left-radius: 80%;
-  border-top-right-radius: 80%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   border: none;
   color: #e92569;
   padding: 10px 40px;
@@ -459,6 +463,7 @@ footer .footer-content p {
   background-color: #fff;
   padding: 40px 0px;
   margin-top: -1px;
+  border-radius: 0px 10px 10px 10px;
 }
 
 .tab-container > .tab-content > .active {

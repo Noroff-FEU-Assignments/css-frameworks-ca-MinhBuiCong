@@ -1,29 +1,40 @@
 nav > .container-fluid {
   max-width: 90%;
   padding: 10px 0px;
-}
 
-nav > .container-fluid > .navbar-brand {
-  color: $primary-color;
-  font-family: $font-heading;
-  font-weight: bold;
-  font-style: italic;
-}
+  .navbar-toggler {
+    border: none;
+  }
 
-.container-fluid > .navbar-toggler {
-  border: none;
-}
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
 
-.container-fluid > .navbar-toggler:focus {
-  box-shadow: none;
+  .navbar-brand {
+    color: $primary-color;
+    font-family: $font-heading;
+    font-weight: bold;
+    font-style: italic;
+  }
 }
 
 .navbar-collapse > ul {
   margin-left: 20px;
+
+  li:hover {
+    background-color: $background-color;
+  }
 }
 
-.navbar-collapse > ul > li:hover {
-  background-color: $background-color;
+.collapse > form > .form-control {
+  border-radius: 4px 0px 0px 4px;
+  border: none;
+}
+
+.collapse > form > .btn {
+  background-color: $primary-color;
+  color: $text-primary;
+  border-radius: 0px 4px 4px 0px;
 }
 
 @media screen and (max-width: 991px) {
@@ -37,32 +48,21 @@ nav > .container-fluid > .navbar-brand {
     right: 0;
     padding: 20px 0px;
     box-shadow: 1px 3px 0px rgba(128, 128, 128, 0.199);
-  }
 
-  .navbar-collapse > ul {
-    margin-left: 0px;
+    ul {
+      margin-left: 0px;
+    }
+
+    form {
+      padding: 40px;
+    }
   }
 
   .navbar-collapse > ul > li {
     line-height: 3;
+
+    .nav-link {
+      padding: 10px 50px;
+    }
   }
-
-  .navbar-collapse > ul > li > .nav-link {
-    padding: 10px 50px;
-  }
-
-  .navbar-collapse > form {
-    padding: 40px;
-  }
-}
-
-.collapse > form > .form-control {
-  border-radius: 4px 0px 0px 4px;
-  border: none;
-}
-
-.collapse > form > .btn {
-  background-color: $primary-color;
-  color: $text-primary;
-  border-radius: 0px 4px 4px 0px;
 }

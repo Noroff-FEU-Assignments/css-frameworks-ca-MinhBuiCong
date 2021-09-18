@@ -28,28 +28,39 @@ nav > .container-fluid, nav > .container-sm, nav > .container-md, nav > .contain
   padding: 10px 0px;
 }
 
-nav > .container-fluid > .navbar-brand, nav > .container-sm > .navbar-brand, nav > .container-md > .navbar-brand, nav > .container-lg > .navbar-brand, nav > .container-xl > .navbar-brand, nav > .container-xxl > .navbar-brand {
+nav > .container-fluid .navbar-toggler, nav > .container-sm .navbar-toggler, nav > .container-md .navbar-toggler, nav > .container-lg .navbar-toggler, nav > .container-xl .navbar-toggler, nav > .container-xxl .navbar-toggler {
+  border: none;
+}
+
+nav > .container-fluid .navbar-toggler:focus, nav > .container-sm .navbar-toggler:focus, nav > .container-md .navbar-toggler:focus, nav > .container-lg .navbar-toggler:focus, nav > .container-xl .navbar-toggler:focus, nav > .container-xxl .navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .container-md .navbar-brand, nav > .container-lg .navbar-brand, nav > .container-xl .navbar-brand, nav > .container-xxl .navbar-brand {
   color: #e92569;
   font-family: "Playfair Display", serif;
   font-weight: bold;
   font-style: italic;
 }
 
-.container-fluid > .navbar-toggler, .container-sm > .navbar-toggler, .container-md > .navbar-toggler, .container-lg > .navbar-toggler, .container-xl > .navbar-toggler, .container-xxl > .navbar-toggler {
-  border: none;
-}
-
-.container-fluid > .navbar-toggler:focus, .container-sm > .navbar-toggler:focus, .container-md > .navbar-toggler:focus, .container-lg > .navbar-toggler:focus, .container-xl > .navbar-toggler:focus, .container-xxl > .navbar-toggler:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 .navbar-collapse > ul {
   margin-left: 20px;
 }
 
-.navbar-collapse > ul > li:hover {
+.navbar-collapse > ul li:hover {
   background-color: white;
+}
+
+.collapse > form > .form-control {
+  border-radius: 4px 0px 0px 4px;
+  border: none;
+}
+
+.collapse > form > .btn {
+  background-color: #e92569;
+  color: white;
+  border-radius: 0px 4px 4px 0px;
 }
 
 @media screen and (max-width: 991px) {
@@ -65,29 +76,18 @@ nav > .container-fluid > .navbar-brand, nav > .container-sm > .navbar-brand, nav
     -webkit-box-shadow: 1px 3px 0px rgba(128, 128, 128, 0.199);
             box-shadow: 1px 3px 0px rgba(128, 128, 128, 0.199);
   }
-  .navbar-collapse > ul {
+  nav > .container-fluid > .navbar-collapse ul, nav > .container-sm > .navbar-collapse ul, nav > .container-md > .navbar-collapse ul, nav > .container-lg > .navbar-collapse ul, nav > .container-xl > .navbar-collapse ul, nav > .container-xxl > .navbar-collapse ul {
     margin-left: 0px;
+  }
+  nav > .container-fluid > .navbar-collapse form, nav > .container-sm > .navbar-collapse form, nav > .container-md > .navbar-collapse form, nav > .container-lg > .navbar-collapse form, nav > .container-xl > .navbar-collapse form, nav > .container-xxl > .navbar-collapse form {
+    padding: 40px;
   }
   .navbar-collapse > ul > li {
     line-height: 3;
   }
-  .navbar-collapse > ul > li > .nav-link {
+  .navbar-collapse > ul > li .nav-link {
     padding: 10px 50px;
   }
-  .navbar-collapse > form {
-    padding: 40px;
-  }
-}
-
-.collapse > form > .form-control {
-  border-radius: 4px 0px 0px 4px;
-  border: none;
-}
-
-.collapse > form > .btn {
-  background-color: #e92569;
-  color: white;
-  border-radius: 0px 4px 4px 0px;
 }
 
 .carousel {

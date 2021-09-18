@@ -1,17 +1,17 @@
 .carousel {
   margin-bottom: 42px;
-}
 
-.carousel > .carousel-indicators > button {
-  width: 30px;
-  height: 30px;
-  opacity: 1;
-  margin-left: 7px;
-  margin-right: 7px;
-}
+  .carousel-indicators > button {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
 
-.carousel > .carousel-indicators > .active {
-  background-color: $primary-color;
+  .carousel-indicators > .active {
+    background-color: $primary-color;
+  }
 }
 
 .text-field {
@@ -77,23 +77,25 @@
 .tab-container {
   max-width: 90%;
   margin: 0px auto;
+
+  ul {
+    border: none;
+  }
 }
 
-.tab-container > ul {
-  border: none;
-}
+.tab-container > ul > li {
+  button {
+    border-top-left-radius: 80%;
+    border-top-right-radius: 80%;
+    border: none;
+    color: $primary-color;
+    padding: 10px 40px;
+  }
 
-.tab-container > ul > li > button {
-  border-top-left-radius: 80%;
-  border-top-right-radius: 80%;
-  border: none;
-  color: $primary-color;
-  padding: 10px 40px;
-}
-
-.tab-container > ul > li > .active {
-  background-color: $background-color;
-  border: none;
+  .active {
+    background-color: $background-color;
+    border: none;
+  }
 }
 
 .tab-content {
@@ -105,27 +107,30 @@
   display: flex;
 }
 
-.tab-pane > .image-container {
-  margin: 0px 40px 40px 40px;
-  width: fit-content;
-}
+.tab-pane {
+  .image-container {
+    margin: 0px 40px 40px 40px;
+    width: fit-content;
+  }
 
-.tab-pane > .image-container > img {
-  width: 238px;
-  height: 149px;
-}
+  .image-container > img {
+    width: 238px;
+    height: 149px;
+  }
 
-.tab-pane > .tab-text-field {
-  margin: 0px 40px 40px 40px;
-  width: fit-content;
+  .tab-text-field {
+    margin: 0px 40px 40px 40px;
+    width: fit-content;
+  }
 }
 
 @media screen and (max-width: 770px) {
   .carousel {
     height: 287px;
-  }
-  .carousel > .carousel-inner > .carousel-item > img {
-    height: 287px;
-    object-fit: cover;
+
+    .carousel-inner > .carousel-item > img {
+      height: 287px;
+      object-fit: cover;
+    }
   }
 }

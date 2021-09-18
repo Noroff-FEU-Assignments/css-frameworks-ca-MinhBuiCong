@@ -21,6 +21,7 @@ footer,
 h1, .h1 {
   color: #e92569;
   font-family: "Playfair Display", serif;
+  font-size: 34px;
 }
 
 nav > .container-fluid, nav > .container-sm, nav > .container-md, nav > .container-lg, nav > .container-xl, nav > .container-xxl {
@@ -49,7 +50,7 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
 }
 
 .navbar-collapse > ul li:hover {
-  background-color: white;
+  background-color: #fff;
 }
 
 .collapse > form > .form-control {
@@ -59,7 +60,7 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
 
 .collapse > form > .btn {
   background-color: #e92569;
-  color: white;
+  color: #fff;
   border-radius: 0px 4px 4px 0px;
 }
 
@@ -94,7 +95,7 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
   margin-bottom: 42px;
 }
 
-.carousel > .carousel-indicators > button {
+.carousel .carousel-indicators > button {
   width: 30px;
   height: 30px;
   opacity: 1;
@@ -102,7 +103,7 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
   margin-right: 7px;
 }
 
-.carousel > .carousel-indicators > .active {
+.carousel .carousel-indicators > .active {
   background-color: #e92569;
 }
 
@@ -176,11 +177,11 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
   margin: 0px auto;
 }
 
-.tab-container > ul {
+.tab-container ul {
   border: none;
 }
 
-.tab-container > ul > li > button {
+.tab-container > ul > li button {
   border-top-left-radius: 80%;
   border-top-right-radius: 80%;
   border: none;
@@ -188,13 +189,13 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
   padding: 10px 40px;
 }
 
-.tab-container > ul > li > .active {
-  background-color: white;
+.tab-container > ul > li .active {
+  background-color: #fff;
   border: none;
 }
 
 .tab-content {
-  background-color: white;
+  background-color: #fff;
   padding: 40px 0px;
 }
 
@@ -204,19 +205,19 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
   display: flex;
 }
 
-.tab-pane > .image-container {
+.tab-pane .image-container {
   margin: 0px 40px 40px 40px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-.tab-pane > .image-container > img {
+.tab-pane .image-container > img {
   width: 238px;
   height: 149px;
 }
 
-.tab-pane > .tab-text-field {
+.tab-pane .tab-text-field {
   margin: 0px 40px 40px 40px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -227,7 +228,7 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
   .carousel {
     height: 287px;
   }
-  .carousel > .carousel-inner > .carousel-item > img {
+  .carousel .carousel-inner > .carousel-item > img {
     height: 287px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -371,7 +372,7 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
 
 .contact-container > .container-fluid > form > .col-12 .input-group > .input-group-text, .contact-container > .container-sm > form > .col-12 .input-group > .input-group-text, .contact-container > .container-md > form > .col-12 .input-group > .input-group-text, .contact-container > .container-lg > form > .col-12 .input-group > .input-group-text, .contact-container > .container-xl > form > .col-12 .input-group > .input-group-text, .contact-container > .container-xxl > form > .col-12 .input-group > .input-group-text {
   border: none;
-  color: white;
+  color: #fff;
   background-color: #c7c7c7;
   font-family: "Lato", sans-serif;
 }
@@ -503,7 +504,7 @@ footer {
   margin-bottom: 40px;
 }
 
-.mobile-footer > .footer-logo > svg {
+.mobile-footer > .footer-logo svg {
   height: 30px;
   width: auto;
 }
@@ -522,9 +523,10 @@ footer {
           justify-content: space-between;
 }
 
-.mobile-footer > .footer-text > p {
+.mobile-footer > .footer-text p {
   font-family: "Lato", sans-serif;
   color: #767676;
+  font-size: 16px;
 }
 
 :root {

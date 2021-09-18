@@ -43,6 +43,7 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
   font-family: "Playfair Display", serif;
   font-weight: bold;
   font-style: italic;
+  font-size: 20px;
 }
 
 .navbar-collapse > ul {
@@ -51,6 +52,11 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
 
 .navbar-collapse > ul li:hover {
   background-color: #fff;
+}
+
+.navbar-collapse > ul li > .nav-link {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
 }
 
 .collapse > form > .form-control {
@@ -244,6 +250,7 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
   margin: 0 auto 40px auto;
   font-family: "Playfair Display", serif;
   color: #e92569;
+  font-size: 34px;
 }
 
 .news-content nav {
@@ -346,18 +353,19 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
   margin-top: 40px;
 }
 
-.contact-container > h1, .contact-container > .h1 {
+.contact-container h1, .contact-container .h1 {
   max-width: 90%;
   margin: 0px auto 30px auto;
   font-family: "Playfair Display", serif;
+  font-size: 34px;
 }
 
-.contact-container > .container-fluid, .contact-container > .container-sm, .contact-container > .container-md, .contact-container > .container-lg, .contact-container > .container-xl, .contact-container > .container-xxl {
+.contact-container .container-fluid, .contact-container .container-sm, .contact-container .container-md, .contact-container .container-lg, .contact-container .container-xl, .contact-container .container-xxl {
   padding: 0px;
   max-width: 90%;
 }
 
-.contact-container > .container-fluid > form, .contact-container > .container-sm > form, .contact-container > .container-md > form, .contact-container > .container-lg > form, .contact-container > .container-xl > form, .contact-container > .container-xxl > form {
+.contact-container > .container-fluid form, .contact-container > .container-sm form, .contact-container > .container-md form, .contact-container > .container-lg form, .contact-container > .container-xl form, .contact-container > .container-xxl form {
   background-color: #efefef;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.205);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.205);
@@ -382,18 +390,18 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
   height: 56px;
 }
 
-.contact-container > .container-fluid > form > .col-12 > .form-label, .contact-container > .container-sm > form > .col-12 > .form-label, .contact-container > .container-md > form > .col-12 > .form-label, .contact-container > .container-lg > form > .col-12 > .form-label, .contact-container > .container-xl > form > .col-12 > .form-label, .contact-container > .container-xxl > form > .col-12 > .form-label {
+.contact-container > .container-fluid > form > .col-12 .form-label, .contact-container > .container-sm > form > .col-12 .form-label, .contact-container > .container-md > form > .col-12 .form-label, .contact-container > .container-lg > form > .col-12 .form-label, .contact-container > .container-xl > form > .col-12 .form-label, .contact-container > .container-xxl > form > .col-12 .form-label {
   font-size: 20px;
   color: #767676;
   font-family: "Lato", sans-serif;
 }
 
-.contact-container > .container-fluid > form > .col-12 > .form-control, .contact-container > .container-sm > form > .col-12 > .form-control, .contact-container > .container-md > form > .col-12 > .form-control, .contact-container > .container-lg > form > .col-12 > .form-control, .contact-container > .container-xl > form > .col-12 > .form-control, .contact-container > .container-xxl > form > .col-12 > .form-control {
+.contact-container > .container-fluid > form > .col-12 .form-control, .contact-container > .container-sm > form > .col-12 .form-control, .contact-container > .container-md > form > .col-12 .form-control, .contact-container > .container-lg > form > .col-12 .form-control, .contact-container > .container-xl > form > .col-12 .form-control, .contact-container > .container-xxl > form > .col-12 .form-control {
   border: none;
   height: 56px;
 }
 
-.contact-container > .container-fluid > form > .col-12 > .message-control, .contact-container > .container-sm > form > .col-12 > .message-control, .contact-container > .container-md > form > .col-12 > .message-control, .contact-container > .container-lg > form > .col-12 > .message-control, .contact-container > .container-xl > form > .col-12 > .message-control, .contact-container > .container-xxl > form > .col-12 > .message-control {
+.contact-container > .container-fluid > form > .col-12 .message-control, .contact-container > .container-sm > form > .col-12 .message-control, .contact-container > .container-md > form > .col-12 .message-control, .contact-container > .container-lg > form > .col-12 .message-control, .contact-container > .container-xl > form > .col-12 .message-control, .contact-container > .container-xxl > form > .col-12 .message-control {
   border: none;
   height: 224px;
 }

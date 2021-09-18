@@ -1,24 +1,27 @@
 .contact-container {
   margin-top: 40px;
-}
 
-.contact-container > h1 {
-  max-width: 90%;
-  margin: 0px auto 30px auto;
-  font-family: $font-heading;
+  h1 {
+    max-width: 90%;
+    margin: 0px auto 30px auto;
+    font-family: $font-heading;
+    font-size: $heading-size;
+  }
+
+  .container-fluid {
+    padding: 0px;
+    max-width: 90%;
+  }
 }
 
 .contact-container > .container-fluid {
-  padding: 0px;
-  max-width: 90%;
-}
-
-.contact-container > .container-fluid > form {
-  background-color: $light;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.205);
-  margin-right: 70px;
-  padding: 30px;
-  width: 555px;
+  form {
+    background-color: $light;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.205);
+    margin-right: 70px;
+    padding: 30px;
+    width: 555px;
+  }
 }
 
 .contact-container > .container-fluid > form > .col-12 {
@@ -35,21 +38,22 @@
     border: none;
     height: 56px;
   }
-}
 
-.contact-container > .container-fluid > form > .col-12 > .form-label {
-  font-size: 20px;
-  color: $text-secondary;
-  font-family: $font-text;
-}
+  .form-label {
+    font-size: $text-large;
+    color: $text-secondary;
+    font-family: $font-text;
+  }
 
-.contact-container > .container-fluid > form > .col-12 > .form-control {
-  border: none;
-  height: 56px;
-}
-.contact-container > .container-fluid > form > .col-12 > .message-control {
-  border: none;
-  height: 224px;
+  .form-control {
+    border: none;
+    height: 56px;
+  }
+
+  .message-control {
+    border: none;
+    height: 224px;
+  }
 }
 
 .contact-container > .container-fluid > form > .col-12 > .form-check {
@@ -99,13 +103,13 @@
   }
 
   .col-12 > p {
-    font-size: 16px;
+    font-size: $text-small;
     font-family: $font-text;
     color: $text-secondary;
   }
 
   .col-12 > .text-info > p {
-    font-size: 16px;
+    font-size: $text-small;
     font-family: $font-text;
     color: $text-secondary;
     margin-left: 10px;

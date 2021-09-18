@@ -6,6 +6,7 @@
     margin: 0 auto 40px auto;
     font-family: $font-heading;
     color: $primary-color;
+    font-size: $heading-size;
   }
 
   nav {
@@ -60,13 +61,13 @@
 
 .container-fluid > .row > .card > .card-body {
   .card-title {
-    font-size: 20px;
+    font-size: $text-large;
     font-family: $font-text;
   }
 
   .card-text {
     color: $text-secondary;
-    font-size: 18px;
+    font-size: $text-medium;
     font-family: $font-text;
   }
 

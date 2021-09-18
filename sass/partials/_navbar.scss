@@ -15,6 +15,7 @@ nav > .container-fluid {
     font-family: $font-heading;
     font-weight: bold;
     font-style: italic;
+    font-size: $text-large;
   }
 }
 
@@ -23,6 +24,11 @@ nav > .container-fluid {
 
   li:hover {
     background-color: $background-color;
+  }
+
+  li > .nav-link {
+    font-size: $text-small;
+    font-family: $font-text;
   }
 }
 

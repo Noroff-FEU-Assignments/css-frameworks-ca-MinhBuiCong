@@ -2,7 +2,7 @@
   padding: 0;
   height: 394px;
   margin-bottom: 40px;
-  width: 13rem;
+  width: 16rem;
 
   .card-img-top {
     object-fit: cover;
@@ -41,6 +41,17 @@
     border: none;
     background-color: $text-secondary;
     border-radius: 0px 5px 5px 0px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .container-fluid > .row > .card {
+    width: 14rem;
+  }
+}
+@media screen and (max-width: 770px) {
+  .container-fluid > .row > .card {
+    width: 13rem;
   }
 }
 

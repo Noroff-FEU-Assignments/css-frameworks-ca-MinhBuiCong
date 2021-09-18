@@ -157,7 +157,7 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
   padding: 0;
   height: 394px;
   margin-bottom: 40px;
-  width: 13rem;
+  width: 16rem;
 }
 
 .container-fluid > .row > .card .card-img-top, .container-sm > .row > .card .card-img-top, .container-md > .row > .card .card-img-top, .container-lg > .row > .card .card-img-top, .container-xl > .row > .card .card-img-top, .container-xxl > .row > .card .card-img-top {
@@ -198,6 +198,18 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
   border-radius: 0px 5px 5px 0px;
 }
 
+@media screen and (max-width: 1170px) {
+  .container-fluid > .row > .card, .container-sm > .row > .card, .container-md > .row > .card, .container-lg > .row > .card, .container-xl > .row > .card, .container-xxl > .row > .card {
+    width: 14rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .container-fluid > .row > .card, .container-sm > .row > .card, .container-md > .row > .card, .container-lg > .row > .card, .container-xl > .row > .card, .container-xxl > .row > .card {
+    width: 13rem;
+  }
+}
+
 @media screen and (max-width: 580px) {
   .container-fluid > .row > .card, .container-sm > .row > .card, .container-md > .row > .card, .container-lg > .row > .card, .container-xl > .row > .card, .container-xxl > .row > .card {
     width: 100%;
@@ -226,7 +238,7 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.205);
   margin-right: 70px;
   padding: 30px;
-  width: 555px;
+  width: 50%;
 }
 
 .contact-container > .container-fluid > form > .col-12, .contact-container > .container-sm > form > .col-12, .contact-container > .container-md > form > .col-12, .contact-container > .container-lg > form > .col-12, .contact-container > .container-xl > form > .col-12, .contact-container > .container-xxl > form > .col-12 {
@@ -333,7 +345,13 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
   margin-left: 30px;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1000px) {
+  .contact-container > .container-fluid > form, .contact-container > .container-sm > form, .contact-container > .container-md > form, .contact-container > .container-lg > form, .contact-container > .container-xl > form, .contact-container > .container-xxl > form {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .contact-container > .container-fluid, .contact-container > .container-sm, .contact-container > .container-md, .contact-container > .container-lg, .contact-container > .container-xl, .contact-container > .container-xxl {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;

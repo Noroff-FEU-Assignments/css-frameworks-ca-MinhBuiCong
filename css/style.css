@@ -495,8 +495,14 @@ nav > .container-fluid .navbar-brand, nav > .container-sm .navbar-brand, nav > .
 }
 
 footer {
-  max-width: 90%;
-  margin: 0px auto;
+  background-color: #fff;
+  padding: 10px 80px;
+}
+
+.mobile-footer {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .mobile-footer > .footer-logo {
@@ -509,6 +515,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 50px;
   margin-bottom: 40px;
 }
 

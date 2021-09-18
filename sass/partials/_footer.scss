@@ -1,12 +1,17 @@
 footer {
-  max-width: 90%;
-  margin: 0px auto;
+  background-color: $background-color;
+  padding: 10px 80px;
+}
+
+.mobile-footer {
+  height: fit-content;
 }
 
 .mobile-footer > .footer-logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
   margin-bottom: 40px;
 
   svg {
